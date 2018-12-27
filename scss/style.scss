@@ -1,0 +1,30 @@
+/*
+ * @Author: xiaoyuf 
+ * @Date: 2018-12-27 11:34:19 
+ * @Last Modified by: xiaoyuf
+ * @Last Modified time: 2018-12-27 14:52:08
+ */
+
+@import '_mixin.scss';
+@import "common.scss";
+@import "reset.scss";
+footer {
+    width: 100%;
+    height: 60px;
+    @include setTopLine;
+    dl {
+        @include flex;
+        @include box_flex;
+        @include direction(column);
+        @include center(center);
+        @include align(center);
+        dt {
+            width: 40px;
+            height: 40px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
